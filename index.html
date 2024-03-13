@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Metro Card</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            background-image:url(image/mtc\ image.jpg);  
+            margin: 0;
+            font-family: Arial, sans-serif;
+            backdrop-filter: blur(5px);
+            text-align: center;
+            color: maroon;
+            font-weight: bold;
+        }
+
+        nav {
+            background-color: rgb(101, 183, 215);
+            width: 100%;
+            height: 85px;
+            position: fixed;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 1000;
+        }
+
+        .logo {
+            width: 70px;
+            margin-right: 10px;
+        }
+
+        h1 {
+            margin: 0;
+            color: white;
+            font-size: 24px;
+        }
+
+        .lb {
+            border: none;
+            color: black;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            border-radius: 12px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        .txt {
+            border: none;
+            padding: 10px 24px;
+            font-size: 16px;
+            border-radius: 12px;
+            width: 80%;
+            max-width: 300px;
+        }
+
+        img {
+            width: 100%;
+            height: auto;
+        }
+
+        @media screen and (max-width: 768px) {
+            .txt {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<nav>
+    <img src="image/mt1.jpg" class="logo" alt="Metro Logo">
+    <h1>Delhi Metro Rail Corporation</h1>
+</nav>
+
+<br><br><br><br>
+
+<br>
+<br>
+<div>
+    <img src="image/mt.jpg" alt="train">
+</div>
+<br>
+<br>
+<center>
+    <p style="font-size: 25px;">Enter Metro Card Number</p>
+    <input type="text" size="20" maxlength="30" placeholder="Metro Card Number" class="txt"/>
+    <p style="font-size: 25px;">Enter your mobile number</p>
+    <input type="password" name="Enter your mobile number" size="20" placeholder="Metro Mobile Number" maxlength="30" class="txt"/>
+    <a href="page2.html">
+        <h3><button type="submit" style="background-color: red;" class="lb">LOGIN</button></h3>
+    </a>
+    <p><font size="5"><pre style="font-size: 25px;">Don't have an account?
+  Sign Up for free!
+    </pre></font></p>
+    <a href="page1.html">
+        <h3><button type="sign up" style="background-color: greenyellow;" class="lb">SIGN UP</button></h3>
+    </a>
+</center>
+</body>
+</html>
